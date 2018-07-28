@@ -21,6 +21,11 @@ def gen_road_key(pos1, pos2):
     return key
 
 
+def set_value(pos1, pos2, roads_dict, field, value):
+    key = gen_road_key(pos1, pos2)
+    roads_dict[key][field] = value
+
+
 with open('data.json', 'r') as f:
     array = json.load(f)
 
