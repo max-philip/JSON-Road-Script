@@ -8,9 +8,9 @@ try:
 except NameError:
     to_unicode = str
 
+    
 # Always concatenates the point keys with the key that is
 # evaluated lower FIRST = ensures all unique keys
-
 def gen_road_key(pos1, pos2):
     key = ""
     if (pos1 < pos2):
