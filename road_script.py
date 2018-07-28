@@ -39,7 +39,8 @@ for loc in points.keys():
     print(loc)
     for neb in points[loc]["neighbours"]:
         key = gen_road_key(loc, neb)
-        roads[key] = {"crime": 0, "elevation": 0, "lights": 0, "parks": 0}
+        roads[key] = {"crime": 0, "elevation": 0, "lights": 0, "parks": 0, \
+        "usr-NICE": 0, "usr-SAFE": 0}
 
 print(len(roads.keys()))
 print(roads)
